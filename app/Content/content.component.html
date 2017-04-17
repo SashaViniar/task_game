@@ -1,0 +1,37 @@
+<div class="container" *ngFor="#nam of names">
+	<div class="col-md-8">
+		<div class="form-group">
+			<input id = "input_search_challenge" class="form-control" type="text" placeholder="Поиск Турниров">			
+		</div>
+		<div class = "">
+			<a href="">
+			<div class="col-md-12 new_game">
+				<div class="col-md-6">
+					<div>
+						<h4>{{nam.name_challenge}}</h4>
+					</div>
+					<div>
+						<h5>{{nam.challenge}}</h5>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class = "fr">
+						<h6>Players - {{nam.count_people}}</h6>
+					</div>	
+				</div>
+			</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div>
+			<ul class = "list-group btn-inverse">
+				<li class = "list-group-item btn-inverse">Все</li>
+				<li class = "list-group-item btn-inverse">В ожидании</li>
+				<li class = "list-group-item btn-inverse">Текущие</li>
+				<li class = "list-group-item btn-inverse">Завершеные</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
