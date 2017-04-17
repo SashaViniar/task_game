@@ -1,4 +1,4 @@
-System.register(["angular2/core", './nav/nav.component', './Content/content.component'], function(exports_1, context_1) {
+System.register(["angular2/core", './nav/nav.component', './Content/content.component', './registration/registration'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(["angular2/core", './nav/nav.component', './Content/content.comp
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, nav_component_1, content_component_1;
+    var core_1, nav_component_1, content_component_1, registration_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(["angular2/core", './nav/nav.component', './Content/content.comp
             },
             function (content_component_1_1) {
                 content_component_1 = content_component_1_1;
+            },
+            function (registration_1_1) {
+                registration_1 = registration_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -32,8 +35,8 @@ System.register(["angular2/core", './nav/nav.component', './Content/content.comp
                         selector: 'my-app'
                     }),
                     core_1.View({
-                        template: "\n  \t<my-nav></my-nav>\n  \t<my-content></my-content>\n  \t",
-                        directives: [nav_component_1.Navbar, content_component_1.Content]
+                        template: "\n  \t<my-nav></my-nav>\n  \t<my-regist></my-regist>\n  \t<my-content></my-content>\n  \t",
+                        directives: [nav_component_1.Navbar, content_component_1.Content, registration_1.Registration]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
